@@ -22,7 +22,7 @@ class BankingSystem(QWidget):
         layout.addWidget(self.stacked_widget)
         self.setLayout(layout)
 
-        self.setWindowTitle("BAnking System")
+        self.setWindowTitle("Account Creation System")
         self.resize(400, 300)
 
         self.file_path = "C:/Users/AMOS KIPCHIRCHIR/Desktop/vs code/py stuff/Pyfiles/userinfo.json"
@@ -39,7 +39,7 @@ class BankingSystem(QWidget):
         sign_up_button.clicked.connect(lambda: self.stacked_widget.setCurrentWidget(self.sign_up_page))
         sign_in_button.clicked.connect(lambda: self.stacked_widget.setCurrentWidget(self.sign_in_page))
 
-        home_layout.addWidget(QLabel("Welcome customer"))
+        home_layout.addWidget(QLabel("Welcome User"))
         home_layout.addWidget(sign_in_button)
         home_layout.addWidget(sign_up_button)
 
